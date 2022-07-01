@@ -6,7 +6,7 @@
 #    By: abouchfa <abouchfa@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/05 15:50:06 by abouchfa          #+#    #+#              #
-#    Updated: 2022/06/17 05:55:45 by abouchfa         ###   ########.fr        #
+#    Updated: 2022/06/29 17:28:34 by abouchfa         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,12 +16,13 @@ CFLAGS = cc -Wall -Wextra -Werror
 
 MLX = -Lmlx -lmlx -framework OpenGL -framework AppKit
 
-SRCS = main.c
+CFILE = main.c \
+		utils/ft_strcmp.c
 
 all : $(NAME)
 
-$(NAME) : $(SRCS)
-	$(CFLAGS) $(SRCS) -L $(MLX) -o $(NAME)
+$(NAME) : $(CFILE)
+	$(CFLAGS) $(CFILE) -L $(MLX) -o $(NAME)
 
 clean :
 	rm -f $(NAME)
