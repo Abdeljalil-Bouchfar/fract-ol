@@ -6,7 +6,7 @@
 #    By: abouchfa <abouchfa@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/05 15:50:06 by abouchfa          #+#    #+#              #
-#    Updated: 2022/06/29 17:28:34 by abouchfa         ###   ########.fr        #
+#    Updated: 2022/07/05 03:23:22 by abouchfa         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,8 +16,11 @@ CFLAGS = cc -Wall -Wextra -Werror
 
 MLX = -Lmlx -lmlx -framework OpenGL -framework AppKit
 
-CFILE = main.c \
-		utils/ft_strcmp.c
+CFILE = fractol.c \
+		utils/draw.c \
+		utils/libft_funs.c \
+		utils/maths.c \
+		utils/hooks.c \
 
 all : $(NAME)
 
@@ -26,5 +29,7 @@ $(NAME) : $(CFILE)
 
 clean :
 	rm -f $(NAME)
+
+fclean:	clean
 
 re : clean all
