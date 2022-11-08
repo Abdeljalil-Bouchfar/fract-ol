@@ -17,7 +17,6 @@ int	destroy_ntv(t_data *data)
 	mlx_destroy_image(data->mlx, data->img);
 	mlx_destroy_window(data->mlx, data->win);
 	exit(0);
-	return (0);
 }
 
 int	key_hook(int keycode, t_data *data)
