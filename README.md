@@ -1,6 +1,11 @@
 # fract-ol
 This project is about creating graphically beautiful fractals.
 
+https://github.com/Abdeljalil-Bouchfar/fract-ol/assets/55533328/c65ff3aa-a1e4-4226-b247-892932c8c20b
+
+https://github.com/Abdeljalil-Bouchfar/fract-ol/assets/55533328/6572960d-8eb6-4758-ad8c-e5f2d67f07d0
+
+
 ## What are Fractals
   A fractal is a never-ending pattern that repeats itself at different scales, this property is called `self-similarity`, although fractals are very complex, they are made by repeating a simple operation driven by recursion.
 ## Fractals are everywhere
